@@ -1,0 +1,147 @@
+window.addEventListener("DOMContentLoaded", () => {
+  let header = document.getElementById("site-header");
+  let footer = document.getElementById("footer");
+  let copyright = document.getElementById("copyright");
+  let date = new Date();
+  let year = date.getFullYear();
+
+  header.innerHTML += `
+     <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg stroke">
+          <h1>
+            <a class="navbar-brand d-flex align-items-center" href="index.html"> AABYFGhana2023</a>
+          </h1>
+          <!-- if logo is image enable this
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+          <button
+            class="navbar-toggler collapsed bg-gradient"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="dropdown">
+                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                  <a href="gallery.html" class="nav-link">Gallery</a>
+                  <a href="presentations.html" class="nav-link">Presentations</a>
+                  <a href="reports.html" class="nav-link">Reports</a>
+                  <a href="publications.html" class="nav-link">Publications</a>
+                </div>
+              </li>
+              <li class="nav-button">
+                <a class="btn login-btn" role="button" href="login.html">Login</a>
+              </li>
+              <!-- search button -->
+              <!-- <div class="search-right ml-lg-3">
+                <form action="#search" method="GET" class="search-box position-relative">
+                  <div class="input-search">
+                    <input type="search" placeholder="Enter Keyword" name="search" required="required" autofocus="" class="search-popup" />
+                  </div>
+                  <button type="submit" class="btn search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+              </div> -->
+              <!-- //search button -->
+              <li class="dropdown">
+              <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">En</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <a class="nav-link" href="blog.html">En</a>
+                  <a href="gallery.html" class="nav-link">Fr</a>
+                  <a href="presentations.html" class="nav-link">Por</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  `;
+
+  footer.innerHTML += `
+  <div class="footer-29 py-5">
+        <div class="container py-lg-4">
+          <div class="row footer-top-29">
+            <div class="col-lg-6 col-12 footer-list-29">
+              <h2>
+                <a class="footer-logo" href="index.html"> Happy Events</a>
+              </h2>
+              <p class="sub-list-text mt-4 pt-lg-2">
+                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+              </p>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-list-29 mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
+              <h6 class="footer-title-29">SUPPORT</h6>
+              <ul>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms"> Terms of Service</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#support"> Support</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 footer-contact-list mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
+              <h6 class="footer-title-29">Contact Info</h6>
+              <ul>
+                <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>21, Obafemi Awolowo Way
+Oke-Bola, Ibadan, Oyo State,
+Nigeria.</li>
+                <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:+264 811500023">+(264) 811 500 023</a></li>
+                <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:+234 7067153182">+(234) 7067 153 182</a></li>
+                <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  `;
+
+  copyright.innerHTML += `
+  <div class="container">
+        <div class="row bottom-copies">
+          <p class="col-lg-8 copy-footer-29">© ${year} AABYFGhana. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank"> Tema Digital Services</a></p>
+          <div class="col-lg-4 text-right">
+            <div class="main-social-footer-29">
+              <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
+              <a href="#twitter" class="twitter"><span class="fa fa-twitter"></span></a>
+              <a href="#google"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+              <a href="#instagram" class="instagram"><span class="fa fa-instagram"></span></a>
+              <a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  `;
+
+  let menuList = document.querySelectorAll(".nav-item");
+  let navList = document.querySelectorAll(".nav-link");
+  const currentLocation = location.href;
+  for (let i = 0; i < navList.length; i++) {
+    if (currentLocation === navList[i].href) {
+      if (currentLocation.split("/")[currentLocation.split("/").length - 1] === "contact.html") {
+        menuList[i - 1].classList.add("active");
+      } else {
+        menuList[i].classList.add("active");
+      }
+    }
+  }
+});
