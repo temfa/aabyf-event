@@ -39,11 +39,9 @@ window.addEventListener("DOMContentLoaded", () => {
                 <a class="nav-link" href="program.html">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="testimonial.html">Testimonials</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
+             
               <li class="dropdown">
                 <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,6 +50,16 @@ window.addEventListener("DOMContentLoaded", () => {
                   <a href="presentations.html" class="nav-link">Presentations</a>
                   <a href="reports.html" class="nav-link">Reports</a>
                   <a href="publications.html" class="nav-link">Publications</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Delegates</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="nav-link" href="blog.html">Attend</a>
+                  <a href="gallery.html" class="nav-link">Visa Info</a>
+                  <a href="presentations.html" class="nav-link">Accomodations</a>
+                  <a href="reports.html" class="nav-link">Faq</a>
+                  <a href="publications.html" class="nav-link">Contact</a>
                 </div>
               </li>
               <li class="nav-button">
@@ -146,3 +154,8 @@ Nigeria.</li>
     }
   }
 });
+//  <li class="nav-item">
+//    <a class="nav-link" href="contact.html">
+//      Contact Us
+//    </a>
+//  </li>;

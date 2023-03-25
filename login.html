@@ -36,7 +36,7 @@
     <!-- //inner banner -->
     <div class="form-wrapper" id="form-wrapper">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form>
           <h1>Create Account</h1>
           <!-- <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -44,21 +44,21 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span> -->
+          <!-- <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Name" /> -->
+          <!-- <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Name" /> -->
           <input type="text" placeholder="Name" />
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
+          <button onclick="payWithPaystack()">Sign Up</button>
         </form>
       </div>
       <div class="form-container sign-in-container">
@@ -103,7 +103,37 @@
     <button onclick="topFunction()" id="movetop" title="Go to top">
       <span class="fa fa-level-up" aria-hidden="true"></span>
     </button>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
     <script>
+      function payWithPaystack() {
+        var handler = PaystackPop.setup({
+          key: "pk_test_7fb90bd8aa7b5f58930828f02a247d2a950ad4d2",
+          email: "topeakinfe@gmail.com",
+          amount: 370000,
+          ref: "" + Math.floor(Math.random() * 1000000000 + 1),
+          metadata: {
+            custom_fields: [
+              {
+                display_name: "Temitope",
+                variable_name: "mobile_number",
+                value: "+2348012345678",
+              },
+            ],
+          },
+          callback: function (response) {
+            console.log(response);
+            if (response.status === "success") {
+              alert("success. transaction ref is " + response.reference);
+            } else {
+              alert("Something went wrong!!! Try again");
+            }
+          },
+          onClose: function () {
+            alert("Transaction cancelled");
+          },
+        });
+        handler.openIframe(); //open the paystack's payment modal
+      }
       const signUpButton = document.getElementById("signUp");
       const signInButton = document.getElementById("signIn");
       const container = document.getElementById("form-wrapper");
