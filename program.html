@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>AABYFGhana2023 - Login</title>
+    <title>AABYFGhana2023 - Programs</title>
     <!-- google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
     <link href="//fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet" />
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="assets/css/style-starter.css" />
     <link rel="stylesheet" href="assets/css/style1.css" />
     <link rel="stylesheet" href="assets/css/style2.css" />
-    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/program.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   </head>
 
   <body>
@@ -25,69 +26,124 @@
     <div class="inner-banner">
       <section class="w3l-breadcrumb">
         <div class="container">
-          <h4 class="inner-text-title font-weight-bold text-white mb-sm-3 mb-2">Login</h4>
+          <h4 class="inner-text-title font-weight-bold text-white mb-sm-3 mb-2">Programs</h4>
           <ul class="breadcrumbs-custom-path">
             <li><a href="index.html">Home</a></li>
-            <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Login</li>
+            <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Programs</li>
           </ul>
         </div>
       </section>
     </div>
     <!-- //inner banner -->
-    <div class="form-wrapper" id="form-wrapper">
-      <div class="form-container sign-up-container">
-        <form action="#">
-          <h1>Create Account</h1>
-          <!-- <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <span>or use your email for registration</span> -->
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <button>Sign Up</button>
-        </form>
-      </div>
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h1>Sign in</h1>
-          <!-- <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-          <span>or use your account</span> -->
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forgot your password?</a>
-          <button>Sign In</button>
-        </form>
-      </div>
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h1>Welcome Back!</h1>
-            <p>To keep connected with us please login with your personal info</p>
-            <button class="ghost" id="signIn">Sign In</button>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h1>Hello, Friend!</h1>
-            <p>Enter your personal details and start journey with us</p>
-            <button class="ghost" id="signUp">Sign Up</button>
-          </div>
+    <div class="container">
+      <div class="tabset">
+        <!-- Tab 1 -->
+        <input type="radio" name="tabset" id="tab1" aria-controls="day1" checked />
+        <label for="tab1">Day 1 <span>(Nov. 1, 2023)</span></label>
+        <!-- Tab 2 -->
+        <input type="radio" name="tabset" id="tab2" aria-controls="day2" />
+        <label for="tab2">Day 2 <span>(Nov. 1, 2023)</span></label>
+        <!-- Tab 3 -->
+        <input type="radio" name="tabset" id="tab3" aria-controls="day3" />
+        <label for="tab3">Day 3 <span>(Nov. 1, 2023)</span> </label>
+        <input type="radio" name="tabset" id="tab4" aria-controls="day4" />
+        <label for="tab4">Day 4 <span>(Nov. 1, 2023)</span></label>
+        <input type="radio" name="tabset" id="tab5" aria-controls="day5" />
+        <label for="tab5">Day 5 <span>(Nov. 1, 2023)</span></label>
+        <input type="radio" name="tabset" id="tab6" aria-controls="day6" />
+        <label for="tab6">Day 6 <span>(Nov. 1, 2023)</span></label>
+
+        <div class="tab-panels">
+          <section id="day1" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
+          <section id="day2" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration 2</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
+          <section id="day3" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration 3</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
+          <section id="day4" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration 4</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
+          <section id="day5" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration 5</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
+          <section id="day6" class="tab-panel">
+            <div class="timetable-header"><h2>Arrival and Registration 6</h2></div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00AM - 5:00 pm</p></div>
+              <div class="col-md-3"><p>Arrival and Check in</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>5:00PM - 6:30 pm</p></div>
+              <div class="col-md-3"><p>Dinner</p></div>
+            </div>
+            <div class="row timetable-body">
+              <div class="col-md-9"><p>6:30PM - 8:00 pm</p></div>
+              <div class="col-md-3"><p>Special Opening Worship</p></div>
+            </div>
+          </section>
         </div>
       </div>
     </div>

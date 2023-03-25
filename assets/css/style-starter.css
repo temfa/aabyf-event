@@ -3219,14 +3219,13 @@ p.sub-list-text {
   color: #a7a7a7;
 }
 
-a.footer-logo {
-  font-size: 45px;
-  color: #fff;
-  font-family: "Sail", cursive;
+.footer-logo {
+  width: 15%;
+  margin: 0px auto;
 }
 
-a.footer-logo:hover {
-  color: var(--secondary-color);
+.footer-logo img {
+  width: 100%;
 }
 
 .w3l-footer-29-main h6.footer-title-29 {

@@ -8,13 +8,13 @@ window.addEventListener("DOMContentLoaded", () => {
   header.innerHTML += `
      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg stroke">
-          <h1>
+          <!--<h1>
             <a class="navbar-brand d-flex align-items-center" href="index.html"> AABYFGhana2023</a>
           </h1>
-          <!-- if logo is image enable this
+           if logo is image enable this-->
     <a class="navbar-brand" href="#index.html">
-        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-    </a> -->
+        <img src="../assets/images/logo.png" alt="Your logo" title="Your logo" style="height:85px;" />
+    </a> 
           <button
             class="navbar-toggler collapsed bg-gradient"
             type="button"
@@ -29,11 +29,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-lg-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="program.html">Program</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="services.html">Services</a>
@@ -83,20 +86,18 @@ window.addEventListener("DOMContentLoaded", () => {
         <div class="container py-lg-4">
           <div class="row footer-top-29">
             <div class="col-lg-6 col-12 footer-list-29">
-              <h2>
-                <a class="footer-logo" href="index.html"> Happy Events</a>
-              </h2>
+            <div class="footer-logo"><img src="../assets/images/logo.png" alt="Your logo" title="Your logo" /></div>
               <p class="sub-list-text mt-4 pt-lg-2">
-                Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies.
+                Founded in 1984, the All Africa Baptist Youth Fellowship is department under the All Africa Baptist Fellowship with full as a regional Body of the Baptist World Alliance. 
               </p>
             </div>
             <div class="col-lg-3 col-sm-6 footer-list-29 mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
-              <h6 class="footer-title-29">SUPPORT</h6>
+              <h6 class="footer-title-29">Quick Links</h6>
               <ul>
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms"> Terms of Service</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="gallery.html"> Gallery</a></li>
                 <li><a href="contact.html">Contact us</a></li>
-                <li><a href="#support"> Support</a></li>
+                <li><a href="blog.html"> Blog</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-sm-6 footer-contact-list mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
