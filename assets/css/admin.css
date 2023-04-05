@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-container {
+  display: flex;
+  overflow: hidden;
+}
+
+#side-nav img {
+  width: 30%;
+  display: block;
+  margin: 20px auto 0px;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 250px;
+  /* position: fixed; */
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #013fa5;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav > div {
+  color: white;
+}
+
+.sidenav a {
+  text-decoration: none;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  transition: 1s;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.sidenav a p {
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+  background-color: rgba(95, 153, 246, 0.5);
+  border-radius: 40px 0px 0px 40px;
+}
+
+.sidenav .closebtn {
+  color: red;
+  font-size: 50px;
+  display: none;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 280px;
+}
+
+.show-sidebar {
+  width: 100px;
+}
+
+#close {
+  display: none;
+  color: red;
+  font-size: 35px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.show-sidebarmain #open {
+  display: none;
+}
+
+.show-sidebar a p {
+  display: none;
+}
+
+.main {
+  transition: margin-left 0.5s;
+  height: 100vh;
+  overflow-y: scroll;
+  flex: 1;
+  /* margin-left: 350px; */
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.sidenav .active {
+  background-color: rgba(95, 153, 246, 0.5);
+  color: white;
+  border-radius: 40px 0px 0px 40px;
+}
+
+#main header {
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.12);
+  align-items: center;
+  padding: 16px 16px 0px;
+  box-sizing: border-box;
+}
+
+.page-name {
+  display: flex;
+  align-items: center;
+}
+
+.page-icons {
+  display: none;
+}
+
+header span {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.header-details h2 {
+  font-family: "Lato", sans-serif;
+  margin-left: 10px;
+}
+
+#main .main-body {
+  width: fit-content;
+  background-color: lightgrey;
+  padding: 16px;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .copyright-agileinfo {
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 1026px) {
+  .sidenav {
+    width: 100px;
+  }
+
+  .sidenav > div a {
+    display: none;
+  }
+
+  .show-sidebar {
+    width: 350px;
+  }
+
+  .sidenav a p {
+    display: none;
+  }
+
+  .show-sidebar a p {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidenav {
+    width: 100px;
+  }
+
+  .show-sidebar {
+    width: 100%;
+  }
+
+  /* .sidenav a p {
+    display: none;
+  } */
+
+  .show-sidebar #close {
+    display: flex;
+    justify-content: flex-end;
+    width: 97%;
+  }
+
+  .sidenav a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .show-sidebar a span {
+    width: unset;
+    display: unset;
+  }
+
+  .page-icons {
+    display: block;
+  }
+}

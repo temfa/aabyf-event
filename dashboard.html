@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <div id="side-nav"></div>
+      <div id="main" class="main">
+        <header>
+          <div class="page-name">
+            <div onclick="openNav()" class="page-icons"><span id="open">&#9776; </span></div>
+            <h2>Dashboard</h2>
+          </div>
+          <div class="header-details">
+            <h2 id="admin-name"></h2>
+            <p>Super Admin</p>
+          </div>
+        </header>
+        <div class="main-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio possimus eum dignissimos, necessitatibus aspernatur error itaque inventore nobis ratione eligendi similique
+          tenetur maiores doloremque saepe sint, ducimus consequatur id. Et.
+        </div>
+        <footer>
+          <p class="copyright-agileinfo" id="copy-right">&copy;</p>
+        </footer>
+        <script>
+          let copyRight = document.getElementById("copy-right");
+          let year = new Date();
+          let newYear = year.getFullYear();
+          copyRight.innerText += newYear;
+          copyRight.innerText += " AABYFGhana2023. All Right Reserved | Design by Tema Digital Designs";
+        </script>
+      </div>
+    </div>
+    <script src="./assets/js/admin.js"></script>
+  </body>
+</html>
