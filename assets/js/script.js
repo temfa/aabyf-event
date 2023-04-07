@@ -137,7 +137,7 @@ Nigeria.</li>
               <a target="_blank" href="#twitter" class="twitter"><span class="fa-brands fa-twitter"></span></a>
               <a target="_blank" href="https://t.me/+BAo2QsK1IyE3ODVk"><span class="fa-brands fa-telegram" aria-hidden="true"></span></a>
               <a target="_blank" href="https://instagram.com/aabyf_21?igshid=ZDdkNTZiNTM= class="instagram"><span class="fa-brands fa-instagram"></span></a>
-              <a target="_blank" href="https://youtube.com/@aabyf class="linkedin"><span class="fa-brands fa-youtube"></span></a>
+              <a target="_blank" href="https://youtube.com/@aabyf" class="linkedin"><span class="fa-brands fa-youtube"></span></a>
             </div>
           </div>
         </div>

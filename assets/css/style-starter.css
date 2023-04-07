@@ -2349,6 +2349,14 @@ h3.video-title {
   line-height: 30px;
 }
 
+.covers14-text a {
+  background-color: #0011ff;
+  width: 30%;
+  outline: none;
+  border: none;
+  color: white;
+}
+
 @media all and (max-width: 991px) {
   .w3l-covers-14 .covers14-text h4 {
     font-size: 50px;
