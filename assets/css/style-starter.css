@@ -2592,10 +2592,18 @@ ul.blog-meta li a {
   width: 100%;
   border-radius: 50%;
   border: 7px solid #fff;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
-.w3l-team-main .team-member,
+.w3l-team-main .team-member {
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.4em;
+}
 .w3l-team-main .team-img {
+  height: 250px;
   position: relative;
   overflow: hidden;
   padding: 0 0.4em;
@@ -2603,9 +2611,14 @@ ul.blog-meta li a {
 
 .w3l-team-main .team-title {
   margin: 30px 0 12px;
-  font-size: 26px;
+  font-size: 16px;
   color: #fff;
   display: block;
+}
+
+.team-member h4 {
+  color: white;
+  font-size: 14px;
 }
 
 .w3l-team-main .team-member p {

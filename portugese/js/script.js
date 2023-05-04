@@ -30,50 +30,50 @@ window.addEventListener("DOMContentLoaded", () => {
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ml-lg-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">Lar <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="about.html">Sobre nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="program.html">Program</a>
+                <a class="nav-link" href="program.html">Programa</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://aabyf-website.netlify.app/testimonials.html">Testimonials</a>
+                <a class="nav-link" href="https://aabyf-website.netlify.app/testimonials.html">Testemunhos</a>
               </li>
               <li class="nav-item">
-                  <a href="contact.html" class="nav-link">Contact</a>
+                  <a href="contact.html" class="nav-link">Contato</a>
               </li>
              
-              <!--  <li class="dropdown">
-                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+             <!-- <li class="dropdown">
+                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recursos</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="nav-link" href="blog.html">Blog</a>
-                  <a href="gallery.html" class="nav-link">Gallery</a>
-                  <a href="presentations.html" class="nav-link">Presentations</a>
-                  <a href="reports.html" class="nav-link">Reports</a>
-                  <a href="publications.html" class="nav-link">Publications</a>
+                  <a href="gallery.html" class="nav-link">Galeria</a>
+                  <a href="presentations.html" class="nav-link">Apresentações</a>
+                  <a href="reports.html" class="nav-link">Relatórios</a>
+                  <a href="publications.html" class="nav-link">Publicações</a>
                 </div>
               </li>
-            <li class="dropdown">
-                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Delegates</a>
+              <li class="dropdown">
+                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Delegados</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="nav-link" href="blog.html">Attend</a>
-                  <a href="accomodations.html" class="nav-link">Accomodations</a>
-                  <a href="faq.html" class="nav-link">Faq</a>
+                  <a class="nav-link" href="blog.html">Participar</a>
+                  <a href="accomodations.html" class="nav-link">Acomodações</a>
+                  <a href="faq.html" class="nav-link">Perguntas frequentes</a>
                   <a href="contact.html" class="nav-link">Contact</a>
                 </div>
+              </li>
+              <li class="nav-button">
+                <a class="btn login-btn" role="button" href="login.html">Conecte-se</a>
               </li> -->
               <li class="dropdown">
-                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
+                <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registro</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="nav-link" href="blog.html">Ghanian Delegates</a>
-                  <a href="register.html" class="nav-link">International Delegates</a>
+                  <a class="nav-link" href="blog.html">Delegados de Gana</a>
+                  <a href="register.html" class="nav-link">Delegados Internacionais</a>
                 </div>
               </li>
-             <!-- <li class="nav-button">
-                <a class="btn login-btn" role="button" href="login.html">Login</a>
-              </li> -->
               <!-- search button -->
               <!-- <div class="search-right ml-lg-3">
                 <form action="#search" method="GET" class="search-box position-relative">
@@ -85,9 +85,9 @@ window.addEventListener("DOMContentLoaded", () => {
               </div> -->
               <!-- //search button -->
               <li class="dropdown">
-              <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
+              <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Por</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                  <p class="nav-link">English</p>
+                  <p class="nav-link" id="english">English</p>
                   <p class="nav-link" id="french">French</p>
                   <p class="nav-link" id="portugese">Portugese</p>
                 </div>
@@ -98,16 +98,16 @@ window.addEventListener("DOMContentLoaded", () => {
       </div>
   `;
   let french = document.getElementById("french");
-  let portugese = document.getElementById("portugese");
+  let english = document.getElementById("english");
 
   french.addEventListener("click", () => {
     const link = currentLocation.split("/")[currentLocation.split("/").length - 1];
     window.location.href = `../french/${link}`;
   });
 
-  portugese.addEventListener("click", () => {
+  english.addEventListener("click", () => {
     const link = currentLocation.split("/")[currentLocation.split("/").length - 1];
-    window.location.href = `../portugese/${link}`;
+    window.location.href = `../${link}`;
   });
 
   footer.innerHTML += `
@@ -117,20 +117,20 @@ window.addEventListener("DOMContentLoaded", () => {
             <div class="col-lg-6 col-12 footer-list-29">
             <div class="footer-logo"><img src="../assets/images/logo.png" alt="Your logo" title="Your logo" /></div>
               <p class="sub-list-text mt-4 pt-lg-2">
-                Founded in 1984, the All Africa Baptist Youth Fellowship is department under the All Africa Baptist Fellowship with full as a regional Body of the Baptist World Alliance. 
+               Fundada em 1984, a All Africa Baptist Youth Fellowship é um departamento da All Africa Baptist Fellowship com pleno funcionamento como órgão regional da Baptist World Alliance.
               </p>
             </div>
             <div class="col-lg-3 col-sm-6 footer-list-29 mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
-              <h6 class="footer-title-29">Quick Links</h6>
+              <h6 class="footer-title-29">Links Rápidos</h6>
               <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="gallery.html"> Gallery</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="login.html">Conecte-se</a></li>
+                <li><a href="gallery.html"> Galeria</a></li>
+                <li><a href="contact.html">Contate-nos</a></li>
                 <li><a href="blog.html"> Blog</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-sm-6 footer-contact-list mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
-              <h6 class="footer-title-29">Contact Info</h6>
+              <h6 class="footer-title-29">Informações de contato</h6>
               <ul>
                 <li class="d-flex align-items-center py-2"><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>21, Obafemi Awolowo Way
 Oke-Bola, Ibadan, Oyo State,
@@ -148,7 +148,7 @@ Nigeria.</li>
   copyright.innerHTML += `
   <div class="container">
         <div class="row bottom-copies">
-          <p class="col-lg-8 copy-footer-29">© ${year} AABYFGhana2023. All rights reserved. Design by <a href="https://w3layouts.com/" target="_blank"> Tema Digital Services</a></p>
+          <p class="col-lg-8 copy-footer-29">© ${year} AABYFGhana2023. Todos os direitos reservados. Desenhado por <a href="https://w3layouts.com/" target="_blank"> Tema Digital Services</a></p>
           <div class="col-lg-4 text-right">
             <div class="main-social-footer-29">
               <a target="_blank" href="https://www.facebook.com/profile.php?id=100068236816994&mibextid=ZbWKwL" class="facebook"><span class="fa-brands fa-facebook"></span></a>
