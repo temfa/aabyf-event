@@ -43,46 +43,84 @@
           <div class="col-lg-12 login-key">
             <i class="fa fa-key" aria-hidden="true"></i>
           </div>
-          <div class="col-lg-12 login-title">Registration Form</div>
-
+          <div class="col-lg-12 login-title">Formulário de registro</div>
           <div class="col-lg-12 login-form">
-            <div class="col-lg-12 login-form">
-              <form>
-                <div class="form-group">
-                  <label class="form-control-label">E-mail</label>
-                  <input type="email" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <label class="form-control-label">Nome completo</label>
+            <form>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Primeiro nome</label>
                   <input type="text" class="form-control" />
                 </div>
-                <div class="form-group">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Sobrenome</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Endereço de email</label>
+                  <input type="email" class="form-control" />
+                </div>
+                <div class="form-group col-lg-6">
                   <label class="form-control-label">Gênero</label>
                   <input type="text" class="form-control" />
                 </div>
-                <div class="form-group">
-                  <label class="form-control-label">Igreja</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="form-group">
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6">
                   <label class="form-control-label">País</label>
                   <input type="text" class="form-control" />
                 </div>
-                <div class="form-group">
-                  <label class="form-control-label">Senha</label>
-                  <input type="password" class="form-control" />
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Contacto</label>
+                  <input type="text" class="form-control" />
                 </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Convenção</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Church</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Precisaria de visto para Gana?</label>
+                <select name="" id="" class="form-control">
+                  <option value=""></option>
+                  <option value="yes">Sim</option>
+                  <option value="no">Não</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Gostaria de uma carta convite. </label
+                ><select name="" id="" class="form-control">
+                  <option value=""></option>
+                  <option value="yes">Sim</option>
+                  <option value="no">Não</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Como você viajaria para Gana?</label
+                ><select name="" id="" class="form-control">
+                  <option value=""></option>
+                  <option value="Air">Ar</option>
+                  <option value="Road">Estrada</option>
+                  <option value="Other">Outro</option>
+                </select>
+              </div>
 
-                <div class="col-lg-12 loginbttm">
-                  <div class="login-btm login-text">
-                    <p>Group Registration? <a href="group-register.html">Click Here</a></p>
-                  </div>
-                  <div class="login-btm login-button">
-                    <button type="submit" class="btn btn-outline-primary" onclick="payWithPaystack()">Register</button>
-                  </div>
+              <div class="col-lg-12 loginbttm">
+                <!-- <div class="login-btm login-text">
+                  <p>Group Registration? <a href="group-register.html">Click Here</a></p>
+                </div> -->
+                <div class="login-btm login-button">
+                  <button type="submit" class="btn btn-outline-primary" onclick="payWithPaystack()">Registro</button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
           <div class="col-lg-3 col-md-2"></div>
         </div>
