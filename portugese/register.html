@@ -27,10 +27,10 @@
     <div class="inner-banner">
       <section class="w3l-breadcrumb">
         <div class="container">
-          <h4 class="inner-text-title font-weight-bold text-white mb-sm-3 mb-2">Registration</h4>
+          <h4 class="inner-text-title font-weight-bold text-white mb-sm-3 mb-2">Cadastro</h4>
           <ul class="breadcrumbs-custom-path">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Registration</li>
+            <li><a href="index.html">Lar</a></li>
+            <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Cadastro</li>
           </ul>
         </div>
       </section>
@@ -45,79 +45,83 @@
           </div>
           <div class="col-lg-12 login-title">Formulário de registro</div>
           <div class="col-lg-12 login-form">
-            <form>
+            <form id="register-form">
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Primeiro nome</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="first-name" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Sobrenome</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="last-name" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Endereço de email</label>
-                  <input type="email" class="form-control" />
+                  <input type="email" class="form-control" id="email" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Gênero</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="gender" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">País</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="country" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Contacto</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="contact" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Convenção</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="convention" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Church</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" class="form-control" id="church" />
                 </div>
               </div>
               <div class="form-group">
                 <label class="form-control-label">Precisaria de visto para Gana?</label>
-                <select name="" id="" class="form-control">
+                <select name="" id="visa" class="form-control">
                   <option value=""></option>
-                  <option value="yes">Sim</option>
-                  <option value="no">Não</option>
+                  <option value="Yes">Sim</option>
+                  <option value="No">Não</option>
                 </select>
               </div>
               <div class="form-group">
                 <label class="form-control-label">Gostaria de uma carta convite. </label
-                ><select name="" id="" class="form-control">
+                ><select name="" id="letter" class="form-control">
                   <option value=""></option>
-                  <option value="yes">Sim</option>
-                  <option value="no">Não</option>
+                  <option value="Yes">Sim</option>
+                  <option value="No">Não</option>
                 </select>
               </div>
               <div class="form-group">
                 <label class="form-control-label">Como você viajaria para Gana?</label
-                ><select name="" id="" class="form-control">
+                ><select name="" id="means" class="form-control">
                   <option value=""></option>
                   <option value="Air">Ar</option>
                   <option value="Road">Estrada</option>
                   <option value="Other">Outro</option>
                 </select>
               </div>
-
+              <div class="form-group col-lg-12">
+                <label class="form-control-label">Senha</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
               <div class="col-lg-12 loginbttm">
                 <!-- <div class="login-btm login-text">
                   <p>Group Registration? <a href="group-register.html">Click Here</a></p>
                 </div> -->
                 <div class="login-btm login-button">
-                  <button type="submit" class="btn btn-outline-primary" onclick="payWithPaystack()">Registro</button>
+                  <button type="submit" class="btn btn-outline-primary" id="register">Registro</button>
+                  <div id="loader"></div>
                 </div>
               </div>
             </form>
@@ -139,6 +143,8 @@
       <span class="fa fa-level-up" aria-hidden="true"></span>
     </button>
     <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script type="module" src="../assets/js/register.js"></script>
     <script>
       function payWithPaystack() {
         var handler = PaystackPop.setup({
