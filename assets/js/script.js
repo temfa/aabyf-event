@@ -32,14 +32,14 @@ window.addEventListener("DOMContentLoaded", () => {
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+             <!-- <li class="nav-item">
                 <a class="nav-link" href="about.html">About Us</a>
-              </li>
+              </li>  -->
               <li class="nav-item">
                 <a class="nav-link" href="program.html">Program</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://aabyf-website.netlify.app/testimonials.html">Testimonials</a>
+                <a class="nav-link" href="https://www.allafricabaptistyouthfellowship.com/testimonials.html">Testimonials</a>
               </li>
               <li class="nav-item">
                   <a href="contact.html" class="nav-link">Contact</a>
@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
               <li class="dropdown">
                 <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="nav-link" href="blog.html">Ghanian Delegates</a>
+                  <a class="nav-link" href="https://bit.ly/aabyf2023">Ghanaian Delegates</a>
                   <a href="register.html" class="nav-link">International Delegates</a>
                 </div>
               </li>
@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", () => {
             <div class="col-lg-6 col-12 footer-list-29">
             <div class="footer-logo"><img src="../assets/images/logo.png" alt="Your logo" title="Your logo" /></div>
               <p class="sub-list-text mt-4 pt-lg-2">
-                Founded in 1984, the All Africa Baptist Youth Fellowship is department under the All Africa Baptist Fellowship with full as a regional Body of the Baptist World Alliance. 
+                Founded in 1984, the All Africa Baptist Youth Fellowship (AABYF) is a department under the All Africa Baptist Fellowship (AABF); which is an arm of the Baptist World Alliance.
               </p>
             </div>
             <div class="col-lg-3 col-sm-6 footer-list-29 mt-lg-0 mt-sm-5 mt-4 pt-sm-0 pt-2">
@@ -137,7 +137,7 @@ Oke-Bola, Ibadan, Oyo State,
 Nigeria.</li>
                 <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:+264 811500023">+(264) 811 500 023</a></li>
                 <li class="d-flex align-items-center py-2"><i class="fa fa-phone mr-2" aria-hidden="true"></i><a href="tel:+234 7067153182">+(234) 7067 153 182</a></li>
-                <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                <li class="d-flex align-items-center py-2"><i class="fa fa-envelope mr-2" aria-hidden="true"></i><a href="mailto:aabyfofficial@allafricabaptistyouthfellowship.com">aabyfofficial@allafricabaptistyouthfellowship.com</a></li>
               </ul>
             </div>
           </div>

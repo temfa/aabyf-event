@@ -23,14 +23,14 @@ const realdb = getDatabase();
 let fName = document.getElementById("first-name");
 let lName = document.getElementById("last-name");
 let email = document.getElementById("email");
-let gender = document.getElementById("gender");
+let gender = document.getElementsByName("gender");
 let country = document.getElementById("country");
 let contact = document.getElementById("contact");
 let convention = document.getElementById("convention");
 let church = document.getElementById("church");
-let visa = document.getElementById("visa");
+let visa = document.getElementsByName("visa");
 let password = document.getElementById("password");
-let letter = document.getElementById("letter");
+let letter = document.getElementsByName("letter");
 let means = document.getElementById("means");
 let loader = document.getElementById("loader");
 let register = document.getElementById("register");
@@ -65,11 +65,6 @@ const validation = () => {
     setErrorFor(email, "Email cannot be empty");
   } else if (productRegex.test(email.value)) {
     setErrorFor(email, "Email can only be alphabelt");
-  }
-  if (gender.value === "") {
-    setErrorFor(gender, "Gender cannot be empty");
-  } else if (productRegex.test(gender.value)) {
-    setErrorFor(gender, "Gender can only be alphabelt");
   }
   if (country.value === "") {
     setErrorFor(country, "Country cannot be empty");
@@ -110,7 +105,6 @@ const clearInputs = () => {
   fName.value = "";
   lName.value = "";
   email.value = "";
-  gender.value = "";
   country.value = "";
   contact.value = "";
   convention.value = "";
@@ -125,19 +119,31 @@ const registerProcess = (e) => {
   createUserWithEmailAndPassword(authentication, email.value, password.value)
     .then((response) => {
       // sessionStorage.setItem("Auth Token", response._tokenResponse.refreshToken);
+      let genderValue;
+      let visaValue;
+      let letterValue;
+      for (let i = 0; i < gender.length; i++) {
+        if (gender[i].checked) genderValue = gender[i].value;
+      }
+      for (let i = 0; i < visa.length; i++) {
+        if (visa[i].checked) visaValue = visa[i].value;
+      }
+      for (let i = 0; i < letter.length; i++) {
+        if (letter[i].checked) letterValue = letter[i].value;
+      }
       set(ref(realdb, "users/" + response.user.uid), {
         id: response.user.uid,
         fName: fName.value,
         lName: lName.value,
         email: email.value,
-        gender: gender.value,
+        gender: genderValue,
         country: country.value,
         password: password.value,
         contact: contact.value,
         convention: convention.value,
         church: church.value,
-        visa: visa.value,
-        letter: letter.value,
+        visa: visaValue,
+        letter: letterValue,
         means: means.value,
       })
         .then(() => {

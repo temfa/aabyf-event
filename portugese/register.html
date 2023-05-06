@@ -63,7 +63,10 @@
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Gênero</label>
-                  <input type="text" class="form-control" id="gender" />
+                  <div class="input-radio">
+                    <label for="gender"> <input type="radio" name="gender" value="Male" />Macho </label>
+                    <label for="gender"> <input type="radio" name="gender" value="Female" />Fêmea </label>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -88,19 +91,17 @@
               </div>
               <div class="form-group">
                 <label class="form-control-label">Precisaria de visto para Gana?</label>
-                <select name="" id="visa" class="form-control">
-                  <option value=""></option>
-                  <option value="Yes">Sim</option>
-                  <option value="No">Não</option>
-                </select>
+                <div class="input-radio">
+                  <label for="visa"> <input type="radio" name="visa" value="Yes" />Sim </label>
+                  <label for="visa"> <input type="radio" name="visa" value="No" />Não </label>
+                </div>
               </div>
               <div class="form-group">
-                <label class="form-control-label">Gostaria de uma carta convite. </label
-                ><select name="" id="letter" class="form-control">
-                  <option value=""></option>
-                  <option value="Yes">Sim</option>
-                  <option value="No">Não</option>
-                </select>
+                <label class="form-control-label">Gostaria de uma carta convite. </label>
+                <div class="input-radio">
+                  <label for="letter"> <input type="radio" name="letter" value="Yes" />Sim </label>
+                  <label for="letter"> <input type="radio" name="letter" value="No" />Não </label>
+                </div>
               </div>
               <div class="form-group">
                 <label class="form-control-label">Como você viajaria para Gana?</label
