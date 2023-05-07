@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="./assets/css/style-starter.css" />
+    <link rel="stylesheet" href="./assets/css/style2.css" />
+    <link rel="stylesheet" href="./assets/css/style1.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <div id="side-nav"></div>
+      <div id="main" class="main">
+        <header>
+          <div class="page-name">
+            <div onclick="openNav()" class="page-icons"><span id="open">&#9776; </span></div>
+            <h2>Dashboard</h2>
+          </div>
+          <div class="header-details">
+            <p id="admin-name"></p>
+            <!-- <p>Super Admin</p> -->
+          </div>
+        </header>
+        <div class="main-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 login-box">
+                <div class="col-lg-12 login-key">
+                  <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                <div class="col-lg-12 login-title">Registration Form</div>
+                <div class="col-lg-12 login-form">
+                  <form id="register-form">
+                    <div class="form-group">
+                      <label class="form-control-label">Would you need a visa to Ghana?</label>
+                      <div class="input-radio">
+                        <label for="visa"> <input type="radio" name="visa" value="Yes" />Yes </label>
+                        <label for="visa"> <input type="radio" name="visa" value="No" />No </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label">I would want an invitation letter. </label>
+                      <div class="input-radio">
+                        <label for="letter"> <input type="radio" name="letter" value="Yes" />Yes </label>
+                        <label for="letter"> <input type="radio" name="letter" value="No" />No </label>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="form-control-label">How would you be travelling to Ghana?</label
+                      ><select name="" id="means" class="form-control">
+                        <option value=""></option>
+                        <option value="Air">Air</option>
+                        <option value="Road">Road</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-12 loginbttm">
+                      <!-- <div class="login-btm login-text">
+                  <p>Group Registration? <a href="group-register.html">Click Here</a></p>
+                </div> -->
+                      <div class="login-btm login-button">
+                        <button type="submit" class="btn btn-outline-primary" id="register">Register</button>
+                        <div id="loader"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p class="copyright-agileinfo" id="copy-right">&copy;</p>
+        </footer>
+        <script>
+          let copyRight = document.getElementById("copy-right");
+          let year = new Date();
+          let newYear = year.getFullYear();
+          copyRight.innerText += newYear;
+          copyRight.innerText += " AABYFGhana2023. All Right Reserved | Design by Tema Digital Designs";
+        </script>
+      </div>
+    </div>
+    <script src="./assets/js/admin.js"></script>
+    <script src="./assets/js/registerEvent.js" type="module"></script>
+  </body>
+</html>

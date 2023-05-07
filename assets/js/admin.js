@@ -13,23 +13,23 @@ window.addEventListener("DOMContentLoaded", () => {
         <p>Dashboard</p></a
       >
       <a
-        href="add-product.html"
+        href="apply.html"
         class="links"
         ><span class="fas fa-shopping-cart"></span>
-        <p>New Products</p></a
+        <p>AABYFGhana</p></a
       >
       <!-- <a href="sell.php" class="links"><span class="fa fa-cart-plus"></span><p>  Make Sale</p></a> -->
       <a
         href="remove.html"
         class="links"
         ><span class="fas fa-trash"></span>
-        <p>Remove Product</p></a
+        <p>Add Testimonies</p></a
       >
       <a
         href="inventory.html"
         class="links"
         ><span class="fas fa-clipboard-list"></span>
-        <p>Inventory</p></a
+        <p>Make Payments</p></a
       >
      
       <!-- <a href="messages.php" class="links <?php if($page =='messages'){ echo 'active'; }?>"><span class="fas fa-envelope"></span><p>  Messages</p></a> -->
@@ -55,6 +55,13 @@ window.addEventListener("DOMContentLoaded", () => {
       link.classList.remove = "show-sidebar";
     });
   });
+
+  let data = window.sessionStorage.getItem("user");
+  let userData = JSON.parse(data);
+
+  let adminName = document.getElementById("admin-name");
+
+  adminName.innerText = userData.lName + " " + userData.fName;
 });
 
 function openNav() {

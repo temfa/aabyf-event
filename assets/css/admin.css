@@ -41,7 +41,7 @@ body {
   width: 100%;
   display: flex;
   transition: 1s;
-  color: white;
+  color: white !important;
   font-size: 15px;
   letter-spacing: 2px;
   font-family: "Lato", sans-serif;
@@ -52,6 +52,7 @@ body {
 .sidenav a p {
   margin: 0px;
   padding-left: 20px;
+  color: white !important;
 }
 
 .sidenav a:hover {
@@ -139,7 +140,7 @@ header span {
 }
 
 #main .main-body {
-  width: fit-content;
+  /* width: fit-content; */
   background-color: lightgrey;
   padding: 16px;
 }

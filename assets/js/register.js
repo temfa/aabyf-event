@@ -16,8 +16,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const authentication = getAuth();
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
-import { getDatabase, ref, set, child, get, update, remove } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
+import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 const realdb = getDatabase();
 
 let fName = document.getElementById("first-name");
@@ -28,10 +28,10 @@ let country = document.getElementById("country");
 let contact = document.getElementById("contact");
 let convention = document.getElementById("convention");
 let church = document.getElementById("church");
-let visa = document.getElementsByName("visa");
+// let visa = document.getElementsByName("visa");
 let password = document.getElementById("password");
-let letter = document.getElementsByName("letter");
-let means = document.getElementById("means");
+// let letter = document.getElementsByName("letter");
+// let means = document.getElementById("means");
 let loader = document.getElementById("loader");
 let register = document.getElementById("register");
 let registerForm = document.getElementById("register-form");
@@ -90,15 +90,15 @@ const validation = () => {
     setErrorFor(password, "Password cannot be empty");
   }
 
-  if (visa.value === "") {
-    setErrorFor(visa, "Cannot be empty");
-  }
-  if (letter.value === "") {
-    setErrorFor(letter, "Cannot be empty");
-  }
-  if (means.value === "") {
-    setErrorFor(means, "Cannot be empty");
-  }
+  //   if (visa.value === "") {
+  //     setErrorFor(visa, "Cannot be empty");
+  //   }
+  //   if (letter.value === "") {
+  //     setErrorFor(letter, "Cannot be empty");
+  //   }
+  //   if (means.value === "") {
+  //     setErrorFor(means, "Cannot be empty");
+  //   }
   return true;
 };
 const clearInputs = () => {
@@ -109,9 +109,9 @@ const clearInputs = () => {
   contact.value = "";
   convention.value = "";
   church.value = "";
-  visa.value = "";
-  letter.value = "";
-  means.value = "";
+  //   visa.value = "";
+  //   letter.value = "";
+  //   means.value = "";
   password.value = "";
 };
 
@@ -120,17 +120,17 @@ const registerProcess = (e) => {
     .then((response) => {
       // sessionStorage.setItem("Auth Token", response._tokenResponse.refreshToken);
       let genderValue;
-      let visaValue;
-      let letterValue;
+      //   let visaValue;
+      //   let letterValue;
       for (let i = 0; i < gender.length; i++) {
         if (gender[i].checked) genderValue = gender[i].value;
       }
-      for (let i = 0; i < visa.length; i++) {
-        if (visa[i].checked) visaValue = visa[i].value;
-      }
-      for (let i = 0; i < letter.length; i++) {
-        if (letter[i].checked) letterValue = letter[i].value;
-      }
+      //   for (let i = 0; i < visa.length; i++) {
+      //     if (visa[i].checked) visaValue = visa[i].value;
+      //   }
+      //   for (let i = 0; i < letter.length; i++) {
+      //     if (letter[i].checked) letterValue = letter[i].value;
+      //   }
       set(ref(realdb, "users/" + response.user.uid), {
         id: response.user.uid,
         fName: fName.value,
@@ -142,9 +142,9 @@ const registerProcess = (e) => {
         contact: contact.value,
         convention: convention.value,
         church: church.value,
-        visa: visaValue,
-        letter: letterValue,
-        means: means.value,
+        // visa: visaValue,
+        // letter: letterValue,
+        // means: means.value,
       })
         .then(() => {
           clearInputs();
