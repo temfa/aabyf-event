@@ -28,10 +28,12 @@ let country = document.getElementById("country");
 let contact = document.getElementById("contact");
 let convention = document.getElementById("convention");
 let church = document.getElementById("church");
-// let visa = document.getElementsByName("visa");
+let visa = document.getElementsByName("visa");
 let password = document.getElementById("password");
-// let letter = document.getElementsByName("letter");
-// let means = document.getElementById("means");
+let passportDate = document.getElementById("expire");
+let passportNumber = document.getElementById("passportNumber");
+let letter = document.getElementsByName("letter");
+let means = document.getElementById("means");
 let loader = document.getElementById("loader");
 let register = document.getElementById("register");
 let registerForm = document.getElementById("register-form");
@@ -86,19 +88,25 @@ const validation = () => {
   } else if (productRegex.test(church.value)) {
     setErrorFor(church, "Church can only be alphabelt");
   }
-  if (password.value === "") {
-    setErrorFor(password, "Password cannot be empty");
+  // if (password.value === "") {
+  //   setErrorFor(password, "Password cannot be empty");
+  // }
+  if (passportNumber.value === "") {
+    setErrorFor(passportNumber, "Passport Number cannot be empty");
+  }
+  if (passportDate.value === "") {
+    setErrorFor(passportDate, "Passport Date cannot be empty");
   }
 
-  //   if (visa.value === "") {
-  //     setErrorFor(visa, "Cannot be empty");
-  //   }
-  //   if (letter.value === "") {
-  //     setErrorFor(letter, "Cannot be empty");
-  //   }
-  //   if (means.value === "") {
-  //     setErrorFor(means, "Cannot be empty");
-  //   }
+  if (visa.value === "") {
+    setErrorFor(visa, "Cannot be empty");
+  }
+  if (letter.value === "") {
+    setErrorFor(letter, "Cannot be empty");
+  }
+  if (means.value === "") {
+    setErrorFor(means, "Cannot be empty");
+  }
   return true;
 };
 const clearInputs = () => {
@@ -109,28 +117,27 @@ const clearInputs = () => {
   contact.value = "";
   convention.value = "";
   church.value = "";
-  //   visa.value = "";
-  //   letter.value = "";
-  //   means.value = "";
-  password.value = "";
+  visa.value = "";
+  letter.value = "";
+  means.value = "";
 };
 
 const registerProcess = (e) => {
-  createUserWithEmailAndPassword(authentication, email.value, password.value)
+  createUserWithEmailAndPassword(authentication, email.value, "password")
     .then((response) => {
       // sessionStorage.setItem("Auth Token", response._tokenResponse.refreshToken);
       let genderValue;
-      //   let visaValue;
-      //   let letterValue;
+      let visaValue;
+      let letterValue;
       for (let i = 0; i < gender.length; i++) {
         if (gender[i].checked) genderValue = gender[i].value;
       }
-      //   for (let i = 0; i < visa.length; i++) {
-      //     if (visa[i].checked) visaValue = visa[i].value;
-      //   }
-      //   for (let i = 0; i < letter.length; i++) {
-      //     if (letter[i].checked) letterValue = letter[i].value;
-      //   }
+      for (let i = 0; i < visa.length; i++) {
+        if (visa[i].checked) visaValue = visa[i].value;
+      }
+      for (let i = 0; i < letter.length; i++) {
+        if (letter[i].checked) letterValue = letter[i].value;
+      }
       set(ref(realdb, "users/" + response.user.uid), {
         id: response.user.uid,
         fName: fName.value,
@@ -138,13 +145,15 @@ const registerProcess = (e) => {
         email: email.value,
         gender: genderValue,
         country: country.value,
-        password: password.value,
+        password: "password",
         contact: contact.value,
         convention: convention.value,
         church: church.value,
-        // visa: visaValue,
-        // letter: letterValue,
-        // means: means.value,
+        visa: visaValue,
+        letter: letterValue,
+        means: means.value,
+        passportDate: passportDate.value,
+        passportNumber: passportNumber.value,
       })
         .then(() => {
           clearInputs();
@@ -152,8 +161,10 @@ const registerProcess = (e) => {
           window.scrollTo(0, 1);
           register.style.display = "block";
           loader.style.display = "none";
+          window.location.href = "./success.html";
         })
         .catch((error) => {
+          console.log(error);
           alert("Something went wrong!!! Try again");
         });
       //   window.location.href = "login.html";

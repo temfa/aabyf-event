@@ -52,6 +52,7 @@ input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="text"],
+input[type="date"],
 select {
   background-color: #1a2226 !important;
   border: none !important;
@@ -91,6 +92,8 @@ label {
 
 .form-control-label {
   font-size: 10px;
+  display: flex;
+  align-items: center;
   color: #6c6c6c;
   font-weight: bold;
   letter-spacing: 1px;
@@ -190,4 +193,14 @@ input[type="radio"]:checked {
 
 .input-radio input {
   margin-right: 10px;
+}
+
+.form-control-label i {
+  /* background-colo
+  display: flex;
+  align-items: center;r: #0db8de; */
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-left: 10px;
 }

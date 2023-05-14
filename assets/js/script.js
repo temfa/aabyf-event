@@ -67,19 +67,13 @@ window.addEventListener("DOMContentLoaded", () => {
                   <a href="contact.html" class="nav-link">Contact</a>
                 </div>
               </li> -->
-             <!-- <li class="dropdown">
+              <li class="dropdown">
                 <a type="button" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="nav-link" href="https://bit.ly/aabyf2023">Ghanaian Delegates</a>
                   <a href="register.html" class="nav-link">International Delegates</a>
                 </div>
-              </li> -->
-              <li class="nav-button">
-                <a class="btn login-btn" role="button" href="register.html">Register</a>
-              </li>
-              <li class="nav-button">
-                <a class="btn login-btn" role="button" href="login.html">Login</a>
-              </li>
+              </li> 
               <!-- search button -->
               <!-- <div class="search-right ml-lg-3">
                 <form action="#search" method="GET" class="search-box position-relative">

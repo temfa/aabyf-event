@@ -38,8 +38,7 @@
     <!-- //inner banner -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-2"></div>
-        <div class="col-lg-6 col-md-8 login-box">
+        <div class="col-lg-12 col-md-12 login-box">
           <div class="col-lg-12 login-key">
             <i class="fa fa-key" aria-hidden="true"></i>
           </div>
@@ -50,72 +49,142 @@
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Prénom</label>
-                  <input type="text" class="form-control" id="first-name" />
+                  <input type="text" required class="form-control" id="first-name" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Nom de famille</label>
-                  <input type="text" class="form-control" id="last-name" />
+                  <input type="text" required class="form-control" id="last-name" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Adresse e-mail</label>
-                  <input type="email" class="form-control" id="email" />
+                  <input type="email" required class="form-control" id="email" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Genre</label>
                   <div class="input-radio">
-                    <label for="gender"> <input type="radio" name="gender" value="Male" />Mâle </label>
-                    <label for="gender"> <input type="radio" name="gender" value="Female" />Femme </label>
+                    <label for="gender"> <input type="radio" required name="gender" value="Male" />Mâle </label>
+                    <label for="gender"> <input type="radio" required name="gender" value="Female" />Femme </label>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Pays</label>
-                  <input type="text" class="form-control" id="country" />
+                  <select required name="" id="country" class="form-control">
+                    <option value=""></option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Benin">Benin</option>
+                    <option value="Botswana">Botswana</option>
+                    <option value="Burkina Faso">Burkina Faso</option>
+                    <option value="Burundi">Burundi</option>
+                    <option value="Cameroon">Cameroon</option>
+                    <option value="Cape Verde">Cape Verde</option>
+                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Chad">Chad</option>
+                    <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                    <option value="Djibouti">Djibouti</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="Eritrea">Eritrea</option>
+                    <option value="Eswatini">Eswatini</option>
+                    <option value="Ethiopia">Ethiopia</option>
+                    <option value="Gabon">Gabon</option>
+                    <option value="Guinea">Guinea</option>
+                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                    <option value="Ivory Coast">Ivory Coast</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Lesotho">Lesotho</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Libya">Libya</option>
+                    <option value="Madagascar">Madagascar</option>
+                    <option value="Malawi">Malawi</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Mauritania">Mauritania</option>
+                    <option value="Mauritius">Mauritius</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Mozambique">Mozambique</option>
+                    <option value="Namibia">Namibia</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Republic of the Congo">Republic of the Congo</option>
+                    <option value="Rwanda">Rwanda</option>
+                    <option value="Sao Tome and Pri­ncipe">Sao Tome and Pri­ncipe</option>
+                    <option value="Senegal">Senegal</option>
+                    <option value="Seychelles">Seychelles</option>
+                    <option value="Sierra Leone">Sierra Leone</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="South Sudan">South Sudan</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Tanzania">Tanzania</option>
+                    <option value="The Gambia">The Gambia</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Zambia">Zambia</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                  </select>
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Contact</label>
-                  <input type="text" class="form-control" id="contact" />
+                  <input type="text" required class="form-control" id="contact" />
                 </div>
               </div>
               <div class="row">
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Convention</label>
-                  <input type="text" class="form-control" id="convention" />
+                  <input type="text" required class="form-control" id="convention" />
                 </div>
                 <div class="form-group col-lg-6">
                   <label class="form-control-label">Église</label>
-                  <input type="text" class="form-control" id="church" />
+                  <input type="text" required class="form-control" id="church" />
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-control-label">Auriez-vous besoin d'un visa pour le Ghana ?</label>
-                <div class="input-radio">
-                  <label for="visa"> <input type="radio" name="visa" value="Yes" />Oui </label>
-                  <label for="visa"> <input type="radio" name="visa" value="No" />Non </label>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label"
+                    >Auriez-vous besoin d'un visa pour le Ghana ?
+                    <span
+                      ><a target="_blank" href="https://visaindex.com/country/Nigeria-passport-ranking/"><i class="fa fa-info-circle"></i></a> </span
+                  ></label>
+                  <div class="input-radio">
+                    <label for="visa"> <input type="radio" required name="visa" value="Yes" />Oui </label>
+                    <label for="visa"> <input type="radio" required name="visa" value="No" />Non </label>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label"> Je voudrais une lettre d'invitation. </label>
+                  <div class="input-radio">
+                    <label for="letter"> <input type="radio" required name="letter" value="Yes" />Oui </label>
+                    <label for="letter"> <input type="radio" required name="letter" value="No" />Non </label>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-control-label"> Je voudrais une lettre d'invitation. </label>
-                <div class="input-radio">
-                  <label for="letter"> <input type="radio" name="letter" value="Yes" />Oui </label>
-                  <label for="letter"> <input type="radio" name="letter" value="No" />Non </label>
+              <div class="row">
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Comment voyageriez-vous au Ghana ?</label
+                  ><select required name="" id="means" class="form-control">
+                    <option value=""></option>
+                    <option value="Air">Air</option>
+                    <option value="Road">Route</option>
+                    <option value="Other">Autre</option>
+                  </select>
+                </div>
+                <div class="form-group col-lg-6">
+                  <label class="form-control-label">Numéro de passeport</label>
+                  <input type="text" required name="" class="form-control" id="passportNumber" />
                 </div>
               </div>
-              <div class="form-group">
-                <label class="form-control-label">Comment voyageriez-vous au Ghana ?</label
-                ><select name="" id="means" class="form-control">
-                  <option value=""></option>
-                  <option value="Air">Air</option>
-                  <option value="Road">Route</option>
-                  <option value="Other">Autre</option>
-                </select>
-              </div>
-              <div class="form-group col-lg-12">
+              <!-- <div class="form-group col-lg-12">
                 <label class="form-control-label">Mot de passe</label>
                 <input type="password" class="form-control" id="password" />
+              </div> -->
+              <div class="form-group col-lg-12">
+                <label class="form-control-label">date d'expiration du passeport</label>
+                <input type="date" class="form-control" id="expire" />
               </div>
               <div class="col-lg-12 loginbttm">
                 <!-- <div class="login-btm login-text">
